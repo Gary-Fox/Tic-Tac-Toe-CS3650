@@ -7,14 +7,17 @@ public class ComputerPlayer extends Player {
     }
 
     @Override
-    public void makeMove(Board board) {
+    public void makeMove(Board board)
+    {
         Random rand = new Random();
         boolean valid = false;
-        while (!valid) {
+        while (!valid)
+        {
             int row = rand.nextInt(3);
             int col = rand.nextInt(3);
             valid = board.placeMark(row, col, mark);
         }
         System.out.println("Computer placed " + mark + " at (" + row + ", " + col + ")");
+
     }
 }
