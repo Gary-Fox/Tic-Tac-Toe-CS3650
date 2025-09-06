@@ -11,6 +11,7 @@ public class AIPlayer extends Player
     }
     @Override
     public int[] chooseMove(Board board) {
+        System.out.println("AI (O) is making a move...");
         return strategy.pickMove(board, mark);
     }
 }

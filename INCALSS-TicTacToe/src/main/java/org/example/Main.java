@@ -4,7 +4,7 @@ package org.example;
 import java.util.Scanner;
 public class Main
 {
-    static void main(String[] args)
+    public static void main(String[] args)
     {
         Scanner in = new Scanner(System.in);
         System.out.println("Welcome to Tic Tac Toe.");
@@ -14,7 +14,7 @@ public class Main
         {
             //Asks user for preffered game type
             System.out.println("Which game would you like: Human vs AI (0) or Human vs Human (1)?");
-            System.out.println("Type anything other number to exit.");
+            System.out.println("Enter any other character to exit.");
             int gameType = in.nextInt();
 
             //Starts the game based on user input
@@ -46,8 +46,7 @@ public class Main
             System.out.println("Want to play again? (y/n)");
         }
         while (in.next().equalsIgnoreCase("y"));
-
-
+        
             System.exit(0);
     }
 }
